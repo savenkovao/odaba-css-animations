@@ -1,0 +1,20 @@
+.transitioned {
+    transition: 500ms;
+}
+
+.text-transition {
+    color: black;
+}
+
+.text-transition:hover {
+    color: red;
+}
+
+.fs-transition:hover {
+    transform: scale(1.2);
+    /*font-size: 25px;*/
+}
+
+.opacity-transition:hover {
+    opacity: .75;
+}
