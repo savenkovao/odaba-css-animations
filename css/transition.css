@@ -4,20 +4,11 @@
 }
 
 .transitioned {
-    transition: 500ms;
+    transition: 600ms;
 }
 
 .transitioned-long {
     transition: 3s;
-}
-
-.fs-transition:hover {
-    transform: scale(1.2);
-    /*font-size: 25px;*/
-}
-
-.opacity-transition:hover {
-    opacity: .75;
 }
 
 .ease {
@@ -38,9 +29,6 @@
 .custom-1 {
     transition-timing-function: cubic-bezier(1.000, 0.835, 0.000, 0.945);
 }
-.custom-2 {
-    transition-timing-function: cubic-bezier(1.000, -0.530, 0.405, 1.425);
-}
 
 .delay-1 {
     transition-delay: calc(var(--delay) * 1);
@@ -57,6 +45,7 @@
 .delay-5 {
     transition-delay: calc(var(--delay) * 5);
 }
+
 .duration-1 {
     transition-duration: calc(var(--duration) * 1);
 }

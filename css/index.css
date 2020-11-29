@@ -5,12 +5,16 @@
     --main-green: #48a273;
     --main-white: #fff;
     --main-gray-light: #989898;
+    --main-yellow: #ffd352;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     box-sizing: border-box;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -19,7 +23,6 @@ body {
     padding: 15px 15px 50px;
     max-width: 900px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .title {
@@ -93,6 +96,10 @@ a:hover {
     color: var(--main-red);
 }
 
+.opacity-75:hover {
+    opacity: .75;
+}
+
 .button {
     display: inline-block;
     padding: 13px 25px;
@@ -141,35 +148,46 @@ a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: 160px;
     background-color: var(--main-orange);
-    margin: 20px;
-    font-size: 12px;
+    margin: 40px;
+    font-size: 20px;
     color: var(--main-white);
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .box-sm {
     width: 55px;
     height: 55px;
     margin: 10px;
+    font-size: 12px;
 }
 
-.box:hover {
-    background-color: var(--main-green);
-    transform: rotate(180deg);
+/* Triggers */
+
+.box-rotate:hover {
+    transform: rotate(45deg);
 }
 
+.animation-cont:hover,
 .time-funcs:hover {
     background-color: #f7f7f7;
     border-color: var(--main-orange);
     box-shadow: 2px 2px 11px -4px var(--main-gray-light)
 }
 
+.mb-lg{
+    margin-bottom: 60px;
+}
+
 .time-funcs:hover .box-move-right.box-sm {
     margin-left: calc(100% - 75px);
-    border-radius: 50%;
-    background-color: var(--main-green);
-    transform: rotate(360deg);
 }
+
+.animation-cont:hover .move-animation {
+    animation-play-state: running;
+}
+
+/* Triggers */
