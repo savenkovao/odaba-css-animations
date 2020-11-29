@@ -4,20 +4,33 @@
     --animate-repeat: 1;
 }
 .infinite {
-    animation-iteration-count: infinite
+    animation-iteration-count: infinite !important;
 }
 .count-2 {
-    animation-iteration-count: 2;
+    animation-iteration-count: 2 !important;
 }
 
 .direction-alternate-reverse {
-    animation-direction: alternate-reverse;
+    animation-direction: alternate-reverse !important;
 }
 .direction-reverse {
-    animation-direction: reverse;
+    animation-direction: reverse !important;
 }
 .direction-alternate {
-    animation-direction: alternate;
+    animation-direction: alternate !important;
+}
+
+.fill-mode-none {
+    animation-fill-mode: none !important;
+}
+.fill-mode-forwards {
+    animation-fill-mode: forwards !important;
+}
+.fill-mode-backwards {
+    animation-fill-mode: backwards !important;
+}
+.fill-mode-both {
+    animation-fill-mode: both !important;
 }
 
 /* Heart beat animation */
