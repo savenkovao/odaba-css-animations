@@ -17,39 +17,155 @@
 <div class="container">
     <h1 class="title">CSS Transition</h1>
 
-    <div class="panel">
-        <p class="text-center text-transition">
+    <h2>Transition property</h2>
+    <div class="panel text-center">
+        <p class="text-red">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
 
-        <p class="text-center transitioned text-transition">
+        <p class="transitioned text-red">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         </p>
     </div>
 
-    <div class="panel">
-        <p class="text-center fs-transition">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, asperiores aspernatur culpa fugiat fugit.
-        </p>
-        <p class="text-center transitioned fs-transition">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, asperiores aspernatur culpa fugiat fugit.
-        </p>
+    <div class="panel text-center">
+        <div class="row">
+            <button class="button opacity-transition">Change opacity!</button>
+            <button class="transitioned button opacity-transition">Change opacity!</button>
+        </div>
+
+        <div class="row">
+            <button class="button btn-shadowed">Change opacity!</button>
+            <button class="transitioned button btn-shadowed">Change opacity!</button>
+        </div>
+
+        <div class="row">
+            <button class="button btn-colored">Change background</button>
+            <button class="transitioned button btn-colored">Change background</button>
+        </div>
+
+        <div class="row">
+            <button class="button btn-bordered">Change background</button>
+            <button class="transitioned button btn-bordered">Change background</button>
+        </div>
+
+        <div class="row">
+            <button class="button btn-scaled">Change Scale</button>
+            <button class="transitioned button btn-scaled">Change Scale</button>
+        </div>
     </div>
 
     <div class="panel">
-        <div class="row">
-            <button class="button opacity-transition">Click me!</button>
-            <button class="transitioned button opacity-transition">Click me!</button>
+        <div class="row flex j-c-center ">
+            <div class="box"></div>
+            <div class="box transitioned"></div>
         </div>
+    </div>
 
+    <h2>Transition duration</h2>
+    <div class="panel transitioned time-funcs">
         <div class="row">
-            <button class="button btn-colored">Click me!</button>
-            <button class="transitioned button btn-colored">Click me!</button>
+            <div class="box box-sm box-move-right">
+                <span>0ms</span>
+            </div>
         </div>
-
         <div class="row">
-            <button class="button btn-bordered">Click me!</button>
-            <button class="transitioned button btn-bordered">Click me!</button>
+            <div class="box box-sm box-move-right duration-1">
+                <span>500ms</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right duration-2">
+                <span>1000ms</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right duration-3">
+                <span>1500ms</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right duration-4">
+                <span>2000ms</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right duration-5">
+                <span>2500ms</span>
+            </div>
+        </div>
+    </div>
+
+    <h2>Transition delay</h2>
+    <div class="panel transitioned time-funcs">
+        <div class="row">
+            <div class="box box-sm box-move-right transitioned-long">
+                <span>0ms</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right transitioned-long delay-1">
+                <span>100ms</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right transitioned-long delay-2">
+                <span>200ms</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right transitioned-long delay-3">
+                <span>300ms</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right transitioned-long delay-4">
+                <span>400ms</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right transitioned-long delay-5">
+                <span>500ms</span>
+            </div>
+        </div>
+    </div>
+
+    <h2>Transition timing function</h2>
+    <div class="panel transitioned time-funcs">
+        <div class="row">
+            <div class="box box-sm box-move-right transitioned-long linear">
+                <span>linear</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right transitioned-long ease">
+                <span>ease</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right transitioned-long ease-in">
+                <span>ease-in</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right transitioned-long ease-out">
+                <span>ease-out</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right transitioned-long ease-in-out">
+                <span>ease-in-out</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right transitioned-long custom-1">
+                <span>cubic-bezier 1</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box box-sm box-move-right transitioned-long custom-2">
+                <span>cubic-bezier 2</span>
+            </div>
         </div>
     </div>
 </div>
