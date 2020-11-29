@@ -163,13 +163,13 @@ a:hover {
 
 .time-funcs:hover {
     background-color: #f7f7f7;
-    border-color: var(--main-green);
+    border-color: var(--main-orange);
     box-shadow: 2px 2px 11px -4px var(--main-gray-light)
 }
 
 .time-funcs:hover .box-move-right.box-sm {
     margin-left: calc(100% - 75px);
     border-radius: 50%;
-    background-color: var(--main-orange);
+    background-color: var(--main-green);
     transform: rotate(360deg);
 }
