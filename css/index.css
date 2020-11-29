@@ -31,6 +31,19 @@ h2 {
     margin-top: 40px;
 }
 
+a {
+    position: relative;
+    color: var(--main-orange);
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: .2s;
+}
+
+a:hover {
+    border-bottom: 2px solid var(--main-orange);
+}
+
 .list {
     font-size: 20px;
     margin-bottom: 50px;
@@ -157,6 +170,6 @@ h2 {
 .time-funcs:hover .box-move-right.box-sm {
     margin-left: calc(100% - 75px);
     border-radius: 50%;
-    background-color: var(--main-green);
+    background-color: var(--main-orange);
     transform: rotate(360deg);
 }
